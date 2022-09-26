@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background-color: whitesmoke;
+    width: 95vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.2rem;
+    margin: auto;
+    padding: 3rem 5rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 5rem;
+}
+
+.des-header {
+    width: 35%;
+    font-size: 2.8rem;
+}
+
+.description {
+    width: 33%;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-out {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-in {
+    position: relative;
+    transition: box-shadow 0.5s, transform 1s;
+}
+
+.image-in:hover {
+    box-shadow: rgba(87, 54, 184, 0.6) 0px 19px 38px,
+        rgba(87, 54, 184, 0.6) 0px 15px 12px;
+    transform: scale(1.1);
+}
+
+.role {
+    font-size: 1.3rem;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    position: absolute;
+    left: 30.5rem;
+    top: 0;
+}
+
+.name {
+    margin-top: 2rem;
+}
+
+.image-out img {
+    width: 30rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.img2,
+.img5 {
+    margin-top: 16rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    .header {
+        gap: 1.5rem;
+    }
+
+    .des-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .image-out {
+        width: 50%;
+    }
+
+    .img5 {
+        margin-top: 0;
+    }
+
+    .img4,
+    .img6 {
+        margin-top: 16rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        gap: 5rem;
+    }
+
+    .des-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .description h5 {
+        line-height: 5rem;
+        text-align: center;
+    }
+
+    .description p {
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .image-out {
+        width: 100%;
+    }
+
+    .image-in {
+        margin-top: 4rem;
+    }
+}
